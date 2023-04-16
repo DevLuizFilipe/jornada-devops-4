@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: kube-news-container
-          image: luizfilipesm/kube-news:0.0.1
+          image: luizfilipesm/kube-news:{{TAG}}
           ports:
             - containerPort: 8080
           envFrom:
