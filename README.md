@@ -1,1 +1,2 @@
 # jornada-devops-4
+Este projeto cria uma pipeline Jenkins para o projeto do desafio anterior e possui duas etapas, sendo de build que faz a construção e envio da imagem para o DockerHub e a etapa de deploy que faz deploy no ambiente kubernetes construido dentro da Digital Ocean.
