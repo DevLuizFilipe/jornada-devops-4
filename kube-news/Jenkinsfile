@@ -25,8 +25,8 @@ pipeline {
             steps {
                 input('Deploy to Production?')
                 withKubeConfig ([credentialsId: 'kubeconfig']) {
-                    sh 'sed -i "s/{{TAG}}/$tag_version/g ./manifests/deployment.yml"'
-                    sh 'kubectl apply -k ./manifests/'
+                    sh 'sed -i "s/{{TAG}}/$tag_version/g ./kube-news/manifests/deployment.yml"'
+                    sh 'kubectl apply -k ./kube-news/manifests/'
                 }
             }
         }
